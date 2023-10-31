@@ -3,10 +3,8 @@ import openai
 # gpt-3.5-turbo
 openai.api_key = "sk-<your-key>"
 
-messages = []
 system_msg = input("What type of chatbot would you like to create? ")
-messages.append({"role": "system", "content": system_msg})
-
+messages = [{"role": "system", "content": system_msg}]
 print("Say hello to your new assistant!")
 while input != "quit()": 
     message = input()
